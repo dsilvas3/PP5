@@ -36,10 +36,11 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
+		document.getElementById("entrybutton").addEventListener("click", buttonAlert);
 		function eventListener() {
 			var txtMsg = document.getElementById('entryinput').value;
 			alert("Diana Silvas: " + txtMsg);
-			document.getElementById('textoutput').innerHTML = txtBox;
+			document.getElementById('textoutput').innerHTML = txtMsg;
 		}
 		
 	</script>
