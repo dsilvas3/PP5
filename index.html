@@ -27,7 +27,7 @@
 	</style>
 </head>
 <body>
-	<h1 class="center">ITMD-361 - Lab 7 - Basic JavaScript Event Handling and DOM</h1>
+	<h1 class="center">ITMD-361 - Lab 7 - Basic Javascript Event Handling and DOM</h1>
 	<h2 class="center">Diana Silvas</h2>
 	<h3 class="center">dsilvas@hawk.iit.edu</h3>
 	<div id="container">
@@ -35,12 +35,12 @@
 		<div id="entrybutton">Alert Me</div>
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
+	
 	<script type="text/javascript">
-		
 		function displayMsg() {
-			var txtMsg = document.getElementById('entryinput').value;
-			alert("Diana Silvas: " + txtMsg);
-			document.getElementById('textoutput').innerHTML = (txtMsg);
+			var showMsg = document.getElementById('entryinput').value;
+			alert("Diana Silvas: " + showMsg);
+			document.getElementById('textoutput').innerHTML = (showMsg);
 		}
 		
 		document.getElementById("entrybutton").addEventListener("click", dsiplayMsg);
