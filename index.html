@@ -37,13 +37,15 @@
 	</div>
 	
 	<script type="text/javascript">
+		document.getElementById("entrybutton").addEventListener("click", dsiplayMsg);
+		
 		function displayMsg() {
 			var showMsg = document.getElementById('entryinput').value;
 			alert("Diana Silvas: " + showMsg);
 			document.getElementById('textoutput').innerHTML = (showMsg);
 		}
 		
-		document.getElementById("entrybutton").addEventListener("click", dsiplayMsg);
+		
 		
 	</script>
 </body>
